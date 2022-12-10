@@ -186,7 +186,6 @@ public class ComplexNumber{
             double topReal = (realPartOriginal*realPartNew)+(imagPartOriginal*imagPartNew);
             double topImag = (imagPartOriginal*realPartNew)-(realPartOriginal*imagPartNew);
             double bottom = (Math.Pow(realPartNew,2) + Math.Pow(imagPartNew,2));
-            Console.WriteLine(topReal + " " + topImag + " " + bottom);
             string res = (topReal/bottom) + " + " + (topImag/bottom) + "i";
             ComplexNumber result = new ComplexNumber(res);
             return result;
